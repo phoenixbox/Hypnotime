@@ -42,6 +42,8 @@
     [super viewDidLoad];
     
     NSLog(@"TimeViewController loaded its view");
+    
+    [[self view] setBackgroundColor:[UIColor greenColor]];
 }
 
 @end
