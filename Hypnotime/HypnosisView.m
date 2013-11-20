@@ -31,7 +31,7 @@
         CGContextStrokePath(ctx);
     }
     
-    NSString *text = @"You Are Getting Sleepy!";
+    NSString *text = @"Obey My Dog!!";
     
     UIFont *font = [UIFont boldSystemFontOfSize:28];
     
@@ -46,7 +46,7 @@
     
     CGSize offset = CGSizeMake(4,3);
     
-    CGColorRef color = [[UIColor darkGrayColor]CGColor];
+    CGColorRef color = [[UIColor cyanColor]CGColor];
     
     CGContextSetShadowWithColor(ctx, offset, 2.0, color);
     
