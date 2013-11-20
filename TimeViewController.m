@@ -23,7 +23,10 @@
 
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nil bundle:nil];
+    NSBundle *appBundle = [NSBundle mainBundle];
+    
+    self = [super initWithNibName:@"TimeViewController"
+                           bundle:appBundle];
     
     if(self){
         UITabBarItem *tbi = [self tabBarItem];
@@ -32,6 +35,13 @@
         [tbi setImage:i];
     }
     return self;
+}
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    NSLog(@"TimeViewController loaded its view");
 }
 
 @end
