@@ -7,6 +7,7 @@
 //
 
 #import "TimeViewController.h"
+#import "HypnosisView.h"
 
 @implementation TimeViewController
 
@@ -18,6 +19,17 @@
     [formatter setTimeStyle:NSDateFormatterMediumStyle];
     
     [timeLabel setText:[formatter stringFromDate:now]];
+}
+
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nil bundle:nil];
+    
+    if(self){
+        UITabBarItem *tbi = [self tabBarItem];
+        [tbi setTitle:@"Time"];
+    }
+    return self;
 }
 
 @end

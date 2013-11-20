@@ -25,9 +25,11 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super initWithNibName:nibNameOrNil bundle:nil];
     if (self) {
         // Custom initialization
+        UITabBarItem *tbi = [self tabBarItem];
+        [tbi setTitle:@"Hypnosis"];
     }
     return self;
 }
